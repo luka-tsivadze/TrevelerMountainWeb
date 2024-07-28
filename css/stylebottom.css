@@ -1,0 +1,165 @@
+
+
+
+.bottom{
+
+    width: 100%;
+    height: 96vh;
+    background-color: black;
+background-image: url('../photos/World_map_green\ 1world.png');
+background-repeat: no-repeat;
+background-size: cover;
+
+display: flex;
+flex-wrap: wrap;
+
+}
+.continent{
+    position: relative;
+    width: 50%;
+    height: 50%;
+
+}
+.firstN{
+
+    
+    position: absolute;
+    bottom:  40px;
+    left: 210px;
+}
+.secondN{
+    
+    position: absolute;
+   right: 220px;
+   top: 250px;
+}
+.firstE{
+    
+    position: absolute;
+    top: 255px;
+    left:310px;
+}
+.secondE{
+    
+    position: absolute;
+    top: 155px;
+    right:215px;
+}
+.thirdE{
+    
+    position: absolute;
+    bottom: 10px;
+    right:240px;
+}
+.places{
+    cursor: pointer;
+}
+.firstS{
+    position: absolute;
+    bottom: 130px;
+    right:360px;
+}
+
+.firstA{
+    
+    position: absolute;
+    bottom: 190px;
+    left:155px;
+}
+.secondA{
+    
+    position: absolute;
+    top: 155px;
+    right:10%;
+}
+.thirdA{
+    
+    position: absolute;
+    bottom: 85%;
+    right:45%;
+}
+.miniCard{
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    top: 200px;
+    left: 160px;
+    background: linear-gradient(90deg, rgba(42, 50, 87, 0.3) 0%, rgba(124, 112, 124, 0.3) 100%);
+width: 50%;
+height: 130px;
+padding: 25px;
+border-radius: 10px;
+
+}
+.miniCard>img{
+    width: 25%;
+    border-radius: 50%;
+    height: 100%;
+}
+.miniCard>p{
+color: aliceblue;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+.europeInfo{
+    top:280px;
+    left: 310px;
+}
+.africaInfo{
+    top: 100px;
+    left: 240px;
+}
+.toggle{
+    display: flex;
+}
+.activated{
+    border-radius: 5px;
+    padding: 2px;
+ box-shadow: 0px 0px 5px rgb(255, 255, 255);
+background-color: rgba(0, 136, 255, 0);
+}
+footer{
+
+    background: rgba(0, 0, 0, 1);
+height: 300px;
+width: 100%;
+
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.FooterColumn{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.FooterColumn h4{
+    margin-bottom: 20px;
+}
+.FooterColumn p{
+    color: rgba(128, 128, 128, 1);
+    cursor: pointer;
+}
+.FooterSocials{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+color: rgba(255, 255, 255, 1);
+font-size: 18px;
+font-weight: 400;
+}
+.FooterRow{
+    display: flex;
+    gap: 15px;
+
+}
+.FooterRow img{
+    cursor: pointer;
+}

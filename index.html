@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unknown</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylemain.css">
+    <link rel="stylesheet" href="css/stylebottom.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+
+            <ul>
+                <li>
+                    <img class="NavIcon" src="icons/Vector 1nav.png" alt="">
+                </li>
+
+
+                <li>
+                    <h4 href="" class="active">Home</h4>
+                    <a href="mountains.html" class="NavText">Mountains</a>
+                    <a href="trips.html" class="NavText">Trips</a>
+                    <a href="chats.html"  class="NavText "  >Account</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="HeaderMain">
+            <div class="HLeft">
+                <h3>Experience the incredible trips to the Mountains</h3>
+                <button>BOOK NOW</button>
+            </div>
+
+            <div class="HRight">
+                <img class="TopIcon" src="photos/GroupHeaderCircle.png" alt="">
+                <img class="BottomIcon" src="photos/Group 5HeaderCards.png" alt="">
+
+            </div>
+
+        </div>
+        <div class="HFooter">
+            <div class="location F">
+                <label for="input1">LOCATION</label>
+                <select id='input1'>
+                    <option >Everest</option>
+                    <option >Lhotse.</option>
+                    <option >Makalu</option>
+                  </select>
+                  
+            </div>
+            <div class="depart F">
+                <label href="dateInput" for="dateInput"> DEPART </label>
+                <div class="row">
+                    
+                    <input type="date" class="dateInput" placeholder=" " id="dateInput">
+                    <p id="result"></p>
+                </div>
+
+            </div>
+            <div class="passengers F">
+                <label for="input3">PASSENGERS</label>
+               <div class="row">
+                <input type="number" max="9" min="1"value='5'  id="input3" >
+                <label for="input3">Adult</label>
+               </div>
+            </div>
+            <button>
+                <img src="icons/Vectorloop.png" alt="search">
+            </button>
+        </div>
+    </header>
+    <!-- new css file stylemain -->
+    <main>
+    <h4>Discover Popular 
+       Mountains</h4>
+     <div class="row mainrow">
+        
+        <button class="actived btn">popular</button>
+        <button class=" btn">EUROPE</button>
+        <button class=" btn">ASIA</button>
+        <button class=" btn">NORTH AMERICA</button>
+        <button class=" btn">SOUTH AMERICA</button>
+        <button class=" btn">AFRICA</button>
+    
+    </div>
+    <div class="mainCardContainer">
+    <div id="card-container"></div>
+</div>
+<div class="reviews">
+
+<div class="left"><h4>Read the blog </h4>
+
+    <div class="ReviewCardL Rev1"> 
+      </div>
+      <div class="ReviewCardL Rev2"> 
+    </div>
+
+
+
+</div>
+<div class="middle">
+    <div class="circle">
+    <img src="photos/rewievman.png" alt="">
+   </div>
+    <div class="RBox">
+        <div class="leftR"><h3>Traveler review</h3>
+            <div class="stars">
+                <img src="icons/Star 1.png" alt="">
+                <img src="icons/Star 1.png" alt="">
+                <img src="icons/Star 1.png" alt="">
+                <img src="icons/Star 1.png" alt="">
+                <img src="icons/Star 1.png" alt="">
+            </div>
+        </div>
+        <div class="rightR"><p>Lorem ipsum dolor sit amet consectetur. Nulla in malesuada ipsum non. Tristique feugiat  </p></div>
+    </div>
+
+</div>
+
+<div class="right">
+<h4>Other Reviews </h4>
+    <div class="RewiewcardsR"><img src="photos/0.png" alt=""><p>Lorem ipsum dolor sit amet consectetur. Nulla in malesuada ipsum non. Tristique feugiat  </p><button>READ MORE</button></div>
+    <div class="RewiewcardsR"><img src="photos/1.png" alt=""><p>Lorem ipsum dolor sit amet consectetur. Nulla in malesuada ipsum non. Tristique feugiat  </p><button>READ MORE</button></div>
+    <div class="RewiewcardsR"><img src="photos/2.png" alt=""><p>Lorem ipsum dolor sit amet consectetur. Nulla in malesuada ipsum non. Tristique feugiat  </p><button>READ MORE</button></div>
+</div>
+
+</div>
+    </main>
+    
+<div class="bottom  ">
+<div class="northAmerica  continent">
+    <div class="northInfo miniCard">
+    <img src="https://www.atlasandboots.com/wp-content/uploads/2021/12/most-beautiful-mountains-in-america-grand-teton.jpg" alt=""><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, itaque iure iste officiis recusanda</p>
+    </div>
+   
+ <img src="icons/Subtractlocation.png" class="firstN places">
+ 
+ <div class="northInfo miniCard">
+    <img src="https://peakvisor.com/img/news/crater-lake.jpg" alt=""><p>Lorem322 ipsum dolor sit amet consectetur, adipisicing elit. Hic, itaque iure iste officiis recusanda</p>
+    </div>
+ <img src="icons/Subtractlocation.png" class="secondN places" alt="">
+
+
+</div>
+<div class="europe continent">
+    <div class="europeInfo miniCard toggle" id='start'>
+        <img src="https://www.mountainiq.com/wp-content/uploads/2019/01/european-mountain-ranges.jpg" alt=""><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, itaque iure iste officiis recusanda</p>
+        </div>
+   
+ 
+    <img src="icons/Subtractlocation.png" class="firstE places activated">
+    
+    <div class="europeInfo miniCard " >
+        <img src="https://www.muchbetteradventures.com/magazine/content/images/2022/05/mont-blanc-3.jpg" alt=""><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, itaque iure iste officiis recusanda</p>
+        </div>
+
+        <img src="icons/Subtractlocation.png" class="secondE places" alt="">
+    
+        <div class="europeInfo miniCard">
+        <img src="https://media.cnn.com/api/v1/images/stellar/prod/180614121226-peaks-of-europe-tease-2.jpg?q=w_2317,h_1303,x_0,y_0,c_fill" alt=""><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, itaque iure iste officiis recusanda</p>
+        </div>
+    
+        <img src="icons/Subtractlocation.png" class="thirdE  places" alt="">
+
+</div>
+<div class="southAmerica continent">
+    
+    
+    <div class="europeInfo miniCard">
+        <img src="https://peakvisor.com/img/news/southern-rocky-mountains.jpg" alt=""><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, itaque iure iste officiis recusanda</p>
+        </div>
+
+    <img src="icons/Subtractlocation.png" class="firstS places">
+</div>
+<div class="africa continent">
+
+    
+    <div class="africaInfo miniCard">
+        <img src="https://storyteller.travel/wp-content/uploads/2021/08/mountains-in-africa.jpg" alt=""><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, itaque iure iste officiis recusanda</p>
+        </div>
+
+    <img src="icons/Subtractlocation.png" class="firstA places">
+
+    
+    <div class="africaInfo miniCard">
+        <img src="https://ojovolador.com/wp-content/uploads/2019/11/searchindia_head_jstapels.jpg" alt=""><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, itaque iure iste officiis recusanda</p>
+        </div>
+
+    <img src="icons/Subtractlocation.png" class="secondA places" alt="">
+    
+   
+    <div class="africaInfo miniCard">
+        <img src="https://images.theconversation.com/files/495306/original/file-20221115-23-c6fqra.jpg?ixlib=rb-1.1.0&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip" alt=""><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, itaque iure iste officiis recusanda</p>
+        </div>
+
+    <img src="icons/Subtractlocation.png" class="thirdA  places" alt="">
+</div>
+
+</div>
+ 
+<footer>
+<img src="icons/Vector 1nav.png" alt="">
+<div class="FooterColumn"><h4>Company</h4>
+
+    <p>About us </p>
+    <p>Careers</p> 
+    <p> Privacy policy </p>
+   <p> Terms & Conditions</p>
+</div>
+<div class="FooterColumn"><h4>Destinations</h4>
+    <p>Europe</p>
+    <p>Asia</p> 
+    <p> Africa </p>
+    <p>North America</p>
+   <p>South America</p>
+</div>
+<div class="FooterColumn"><h4>Support</h4>
+    <p> If u lost </p>
+    <p> About booking</p> 
+    <p>Wrong Destination  </p>
+   <p>Safety</p>
+   <p>More</p>
+</div>
+<div class="FooterSocials"><h4>Our Socials</h4>
+<div class="FooterRow">
+    <img src="icons/Vectorfb.png" alt="">
+    <img src="icons/Vectoryt.png" alt="">
+    <img src="icons/Vectorinst.png" alt="">
+    <img src="icons/Vectortwt.png" alt="">
+</div>
+</div>
+
+
+
+
+
+
+</footer>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="java/main.js"></script>
+<script src="java/main2.js"></script>
+<script src="java/main3.js"></script>
+</html>
+

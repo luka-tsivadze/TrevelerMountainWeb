@@ -1,0 +1,322 @@
+main {
+    width: 100%;
+    padding: 0 10em;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: max-content;
+    gap: 50px;
+}
+
+main>h4 {
+    margin-top: 50px;
+    color: rgba(255, 255, 255, 1);
+
+    width: 274px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.mainrow {
+    gap: 1%;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 8px;
+    border: unset;
+    color: rgba(128, 128, 128, 1);
+font-size: 18px;
+    background: rgba(21, 25, 37, 1);
+    padding: 14px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.actived {
+    background: linear-gradient(90deg, #2A3257 0%, #7C707C 100%);
+    color: rgba(21, 25, 37, 1);
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+.mainCardContainer {
+    padding: 8px;
+    overflow-x: scroll;
+
+}
+
+#card-container {
+    width: max-content;
+    gap: 20px;
+    display: flex;
+}
+
+.mainCardContainer::-webkit-scrollbar {
+    height: 12px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+}
+
+.mainCardContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(161, 161, 161, 0.689);
+    border-radius: 10px;
+    border: 3px solid rgba(11, 115, 206, 0.462);
+
+}
+
+.card {
+    width: 360px;
+    height: 360px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: end;
+
+}
+
+.headerM {
+    z-index: 3;
+    color: rgba(255, 255, 255, 1);
+    padding: 0 30px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.card>img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.cover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.127) 8%, rgba(0, 0, 0, 0.862) 85%);
+    z-index: 2;
+    padding: 15px;
+}
+
+.rowM {
+    z-index: 2;
+
+
+    color: white;
+    padding: 10px 30px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location {
+    display: flex;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.price {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.reviews {
+
+    display: flex;
+    gap: 5%;
+    position: relative;
+}
+
+.reviews>.left {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.left>h4 {
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.left .ReviewCardL {
+
+    display: flex;
+    gap: 30px;
+    height: 180px;
+    width: 100%;
+
+}
+
+.cardRightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 17px
+}
+
+.cardRightSide h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.73px;
+}
+
+.cardRightSide p {
+    width: 170px;
+    color: rgba(128, 128, 128, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    overflow-y: hidden;
+}
+
+.cardRightSide>button {
+    cursor: pointer;
+    background: linear-gradient(90deg, #2A3257 0%, #7C707C 100%);
+    border: unset;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+.ReviewCardL img{
+    width: 192px;
+    border-radius: 15px;
+}
+
+.middle {
+    height: 512px;
+    padding: 5px;
+    position: relative;
+}
+
+.circle {
+    margin-top: 80px;
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #2A3257 0%, #7C707C 100%);
+    display: flex;
+
+    justify-content: center;
+}
+
+.circle img {
+    position: absolute;
+    top: 0px
+}
+
+.RBox {
+    width: 92%;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    height: 25%;
+    border-radius: 10px;
+}
+
+.RBox>.leftR {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.RBox>.leftR>h3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.stars {
+    display: flex;
+    gap: 3px;
+}
+
+.RBox>.rightR {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightR>p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 1);
+    line-height: 24px;
+
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 33%;
+}
+.right h4{
+    margin-left: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.RewiewcardsR {
+    position: relative;
+    background: rgba(21, 25, 37, 1);
+    border-radius: 10px;
+    display: flex;
+    gap: 17px;
+    width: 85%;
+    padding: 5px;
+    height: 115px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.RewiewcardsR>img {
+    width: 86px;
+    height: 86px;
+    position: relative;
+    left: 0px;
+}
+
+.RewiewcardsR>p {
+    color: rgba(128, 128, 128, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 161px;
+}
+
+.RewiewcardsR>button {
+    cursor: pointer;
+    background: linear-gradient(90deg, #2A3257 0%, #7C707C 100%);
+    border: unset;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+    font-size: 16px;
+}

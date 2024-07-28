@@ -1,0 +1,164 @@
+
+
+  body{
+    background-image: url('../photos/pexels-creative-vix-9754\ 1chatbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .LoginForm h3{
+    color: white;
+     font-weight: 700;
+     font-size: 32px;
+  }
+  .RegistrationForm h3{
+    color: white ;
+     font-weight: 700;
+     font-size: 32px;
+  }
+  .icon{
+    position: absolute;
+    left: 80px;
+     cursor: pointer;    
+ 
+     top: -80px;
+    z-index: 6;
+  }
+
+  input{
+    border-radius: 50px;
+    border: unset;
+    height: 40px;
+    width: 250px;
+    opacity: 0.7;
+    padding-left:10px ;
+     font-size: 16px;
+     font-weight: 700;
+     color: black;
+  }
+  .Parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    gap: 5px;
+    width: 900px;
+    border-radius: 40px;
+    height: 600px;
+    background-color: rgb(179, 179, 179);
+    box-shadow: 0px 0px 10px black;
+    background: #000000be;
+
+
+  }
+
+  
+  .RegistrationForm, .LoginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    width: 50%;
+
+    justify-content: center;
+    align-items: center;
+  }
+    
+  
+  .RegisterButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, rgba(35, 53, 60, 0.7) 0%, rgba(106, 136, 146, 0.7) 100%);
+border: unset;
+    color: white;
+    border-radius: 35px;
+width: 154px;
+height: 42px;
+    cursor: pointer;
+  }
+  
+  .cover {
+    z-index: 5;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(180deg, #1D2E35 10%, #7898A3 100%);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 50px;
+    border-radius: 40px;
+    transition: all 1s;
+    left: 0;
+ 
+  }
+  .cover h1{
+    color: white;
+    
+  }
+  .cover p{
+ 
+    display: flex;
+ width: 60%;  
+  text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .cover button{
+    cursor: pointer;
+    padding: 11px 40px;
+    background-color: unset;
+    border: 3px solid white;
+    border-radius: 35px;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .cover button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    /* border: 3px solid black; */
+    transition: all 0.5s;
+  }
+  .chack:checked ~ .cover {
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    transition: all 1;
+    left: 450px;
+  }
+
+
+ .LoginForm a{
+  text-decoration: unset;
+  color: white;
+  font-weight: 700;
+ }
+  .RegistrationForm  input::placeholder{
+    font-weight: 700;
+    font-size: 15px;
+    color: black;   
+     transition: all 1s;
+  }
+  .LoginForm input::placeholder{
+    font-weight: 700;
+    font-size: 15px;
+    color: black;
+    transition: all 0.6s;
+  }
+  .RegistrationForm input:focus::placeholder {
+    transition: all 0.6s;
+    opacity: 0;
+}
+.LoginForm input:focus::placeholder {
+  transition: all 0.6s;
+  opacity: 0;
+}
+  .chack {
+    display: none;
+  }
+  
